@@ -1,0 +1,47 @@
+h1{
+	color: cadetblue;
+}
+.logo
+{
+	float:left;
+	margin:10px;
+	width:100px;
+	height:50px;
+}
+.logo_pad
+{
+	width:100%;
+	background-color:#0d0d0c;
+	padding: 10px;
+	height:70px;
+}
+.logo_text
+{
+	color: #4d9cd1;
+}
+
+.navigate
+{
+
+	text-align: center;
+
+	word-spacing: 10px;
+}
+
+.pre-text
+{
+
+	text-align: center;
+}
+
+#main-aside-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-aside-wrapper aside {
+  flex: 1;
+}
+#main-aside-wrapper main {
+  flex: 1;
+}

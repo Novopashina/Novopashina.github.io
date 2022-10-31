@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <script src="script6.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 6</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+  <div class="all">
+      <span class="h">Рассчитать стоимость кофе</span>
+      <form>
+        <span> Введите количество стаканов:</span>
+        <div class="field">
+          <input name="field" id="field" type="text">
+        </div>
+        <span> Выберете вид кофе</span>
+        <select name="prodType">
+          <option value="1">Латтэ</option>
+          <option value="2">Капучино</option>
+          <option value="3">Американо</option>
+        </select>
+        <div id="prodOptions">
+          <span> Куда доставляем?</span> <br>
+          <label><input type="radio" name="prodOptions" value="option1">Ванильный сироп </label>
+          <label><input type="radio" name="prodOptions" value="option2"> Клубничный сироп </label>
+          <label><input type="radio" name="prodOptions" value="option3"> Без сиропа </label>
+        </div>
+        <div id="checkboxes">
+          <span> Сахар? <br> (Лучше добавить)</span> <br>
+          <label><input type="checkbox" name="checkboxes" value="check1"> Много сахара</label>
+          <label><input type="checkbox" name="checkboxes" value="check2"> Еще больше сахара</label>
+        </div> 
+      </form>
+      <br> 
+      <div id="result" ></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    min-height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.h,#result{
+    font-weight: bold;
+    font-size: large;
+}
+.all{
+    width: 400px;
+    border: solid 2px rgba(7, 7, 7, 0.747);
+    border-radius: 10px;
+    background-color: rgba(69, 50, 19, 0.699);
+    padding: 30px;
+}

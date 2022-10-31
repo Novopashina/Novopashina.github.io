@@ -1,11 +1,94 @@
-.cvet
+h1{
+	color: red;
+}
+
+.logo
 {
-color:black;
+	float:left; 
+	margin:10px; 
+	width:100px; 
+	height:50px;
 }
-.fon1 {
-background-color #00000;
+.logo_pad
+{
+	width:100%; 
+	background-color:#000000; 
+	padding: 10px; 
+	height:70px;
 }
-.fon2 {
-background-color #FFFFFF;
+.logo_text
+{
+	color: #cc0000;
 }
-(c) Новопашина Анастасия
+
+.navigate
+{
+
+	text-align: left;
+	padding: 20px;
+	word-spacing: 10px;
+}
+
+.pre-text
+{
+	
+	text-align: left;
+}
+
+.spisok
+{
+padding: 0px;
+}
+
+
+.poryadok
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#container
+{
+display: flex;
+flex-direction: column;
+}
+
+.tablica
+{
+order: 1;
+}
+
+.forma
+{
+order: 2;
+}
+
+#main-aside-wrapper {
+display: flex;
+flex-direction: row;
+}
+
+#main-aside-wrapper aside {
+flex: 1;
+}
+#main-aside-wrapper main {
+flex: 1;
+}
+
+@media screen and (max-width: 980px) {
+#main-aside-wrapper {
+flex-direction: row-reverse;
+}
+
+.tablica
+{
+order: 2;
+}
+
+.forma
+{
+order: 1;
+}
+}
+(c) Шапуваленко Станислав
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Animals</title>
+<link rel = "stylesheet" href = "style.css">
+</head>
+
+
+<body style="margin:0;" bgcolor = "#4d9cd1">
+
+
+<div style="width:100%; background-color:#a7cfeb; padding: 10px; height:120px;">
+
+<img style="float:left; margin:10px; width:100px; height:100px;" src="picture.jpg" />
+
+<div style="background-color:#a7cfeb; padding:10px;">Животные</div>
+</div>
+
+<div style="max-width:800px; background-color:#a7cfeb; margin: 0 auto; margin-top:20px; padding:10px;">
+
+<p>
+<a target="blank" href="https://lapkins.ru/">Домашние животные</a> </p>
+<p>
+<a target="blank" href="https://lapkins.ru/dog/">Собаки</a> </p>
+
+<p>
+<a target="blank" href="https://lapkins.ru/cat/">Кошки</a> </p>
+</div>
+
+<div style="max-width:800px; background-color:#a7cfeb; margin: 0 auto; margin-top:20px; padding:10px;">
+</center>
+<ol type="1">
+<li><p> Абсолютную гиперссылку на главную страницу сайта example.com - <a target="_blank" href="http://example.com/">example.com;</a></p></li>
+
+<li><p> Абсолютную на главную сайта example.com в протоколе https:
+<a target="_blank" href="https://example.com/">example.com;</a></p><li>
+
+<p> Cсылку на файл на сервере FTP без авторизации:
+<a target="_blank" href="ftp://example.com/myfile.zip">f.txt</a></p>
+
+<li><p>Cсылку на файл на сервере FTP с авторизацией:
+<a target="_blank" href="ftp://user:password@example.com/f.txt">f.txt</a></p></li>
+
+<li><p>Cсылку на фрагмент страницы некоторого сайта:
+<a target="_blank" href="https://ru.wikipedia.org/wiki/Россия#:~:text=Россия,другие зн..">Ссылка</a></p></li>
+
+<li><p>Cсылку на фрагмент текущей страницы:
+<a href="#top">Наверх</a></p></li>
+
+<li><p>Cсылку с двумя параметрами в url:
+<a target="_blank" href="https://www.kubsu.ru/ru/university">Ссылка</a></p></li>
+
+<li><p>Список ссылок основной навигации сайта с подписями title:</p>
+<ul type ="square">
+<li><a target="_blank" href="https://www.kubsu.ru/ru" title="Главная страница">Главная</a></li>
+<li><a target="_blank" href="https://www.kubsu.ru/ru/abiturient" title="Страница приемной комиссии">Абитуриенту</a></li>
+<li><a target="_blank" href="https://www.kubsu.ru/ru/education/" title="Страница со списком факультетов">Образование</a></li>
+</ul></li>
+
+<li><p>Сслыка без href: <a>Ссылка</a></p></li>
+
+<li><p>Сслыка с пустым href: <a href="">Ссылка</a></p></li>
+
+<li><p>Ссылка, по которой запрещен переход поисковикам:
+<a target="blank" rel="nofollow" href="http://example.com">Ссылка</a></p></li>
+
+<li><p>Ссылка, запрещенная для индексации поисковиками: <a target="blank" href="http://example.com"><noindex>Ссылка</noindex></a></p></li>
+
+<li><p>Контекстную в тексте абзаца;
+<a target="blank" href="https://www.kubsu.ru">кубгу</a> ссылка на сайт кубгу</p></li>
+
+<li><p>Ссылка-изображение:
+<a target="blank" href="https://www.kubsu.ru"><img src="picture.jpg" style="height: 50px; width: 50px;"></a></p></li>
+
+<li><p>Cсылки из прямоугольных и круглых областей картинки (HTML-тег map):
+<p><img src="picture.jpg" width="100" height="100" usemap="#navigation"></p></li>
+<map name="navigation">
+<area shape="circle" coords="50, 50, 50" href="https://www.kubsu.ru" alt="">
+</map>
+
+<li><p>Относительная на страницу в текущем каталоге: <a target="blank" href="next.html">Ссылка</a></p></li>
+
+<li><p>Относительная на страницу в каталоге о: <a target="blank" href="about/nextnext.html">Ссылка</a></p></li>
+
+<li><p>Относительная на страницу в каталоге выше текущего: <a target="blank" href=".. /pred.html">Ссылка</a></p></li>
+
+<li><p>Относительная на страницу в каталоге двумя уровнями выше: <a target="blank" href=".. /.. /predpred.html">Ссылка</a></p></li>
+
+</ol>
+</div>
+
+<div style="max-width:800px; background-color:#a7cfeb; margin: 0 auto; margin-top:20px; padding:10px;">
+
+<table class="cvet" border="1">
+
+<thead>
+<tr class = "fon1">
+<th>Породы</th>
+<th>Кол-во пород</th>
+</tr>
+</thead>
+<tbody>
+<tr class = "fon2">
+<td>Собак</td>
+
+<td>400</td>
+</tr>
+<tr class = "fon1">
+<td>Кошек</td>
+<td>200</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class = "fon2">
+<td colspan="2">Общее кол-во пород: 600</td>
+</tr>
+</tfoot>
+</table>
+</div>
+
+<div style="max-width:800px; background-color:#a7cfeb; margin: 0 auto; margin-top:20px; padding:10px;">
+
+<form action="/"
+method="POST">
+
+<label>
+Имя и фамилия:<br />
+<input name="field-name-1"
+value="" />
+</label><br />
+
+<label>
+Ваш email:<br />
+<input name="field-email"
+value=""
+type="email" />
+</label><br />
+
+<label>
+Введите дату рождения:<br />
+<input name="field-date"
+value=""
+type="date" />
+</label><br />
+
+Ваш пол:<br />
+<label><input type="radio" checked="checked"
+name="radio-group-1" value="Мужской" />
+Мужской</label>
+<label><input type="radio"
+name="radio-group-1" value="Женский" />
+Женский</label><br />
+
+Количество конечностей:<br />
+<label><input type="radio" checked="checked"
+name="radio-group-2" value="1" />
+1</label>
+<label><input type="radio"
+name="radio-group-2" value="2" />
+2</label><br />
+<label><input type="radio" checked="checked"
+name="radio-group-2" value="3" />
+3</label>
+<label><input type="radio"
+name="radio-group-2" value="4" />
+4</label><br />
+
+<label>
+Список способностей:
+<br />
+<select name="field-name-4[]"
+multiple="multiple">
+<option value="Значение1">Бессмертие</option>
+<option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+<option value="Значение3" selected="selected">Левитация</option>
+</select>
+</label><br />
+
+<label>
+Биография:<br />
+<textarea name="field-name-2"></textarea>
+</label><br />
+
+Чекбокс:<br />
+<label><input type="checkbox" checked="checked"
+name="check-1" />
+С контрактом ознакомлен</label><br />
+
+Кнопка отправки формы:
+<input type="submit" value="Отправить" />
+</form>
+
+</td>
+</tr>
+</table>
+
+</center>
+</div>
+
+<div style="width:100%; background-color:#a7cfeb; padding: 10px; height:120px;margin: 0 auto; margin-top:20px; padding:10px;">
+<center>
+<p0>(c) Анастасия Новопашина 2021</p>
+</center>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+body {
+    background-size: 300% 300%;
+    background: url(fon6.jpg);
+}
+
+.сontainer_gallery {
+    background-color: maroon;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider {
+    position:relative;
+    padding: 20px 30px ;
+    margin-bottom:-30px;
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -33px 0px 0px 0px;
+    font-size: 0;
+    width: 35px;
+    height: 35px;
+    border: 0px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("arrow_left.svg") 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("arrow_right.svg") 0 0 / 100% no-repeat;
+}
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+
+}
+.slitem img {
+    width: 200px;
+    height: 180px;
+}
+.slider .slick-dots button {
+    font-size: 0;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(53, 49, 13, 0.562);
+    border-radius: 50%;
+    border-color: maroon;
+}
+
+.slider .slick-dots li.slick-active button {
+    background-color: rgba(0, 0, 0, 0.733);
+    border: 1px solid rgba(0, 0, 0, 0.699);
+}
+
+.slitem {
+    padding: 0px 15px;
+}
+
+@media screen and (min-device-width: 800px) 
+{
+    body{
+      margin-top: 15vw;
+      margin-right: 20vw;
+      margin-left: 20vw;
+      margin-bottom: 15vw;
+    }
+}

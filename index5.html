@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <center>
+  <div class = "logo_pad">
+    <meta charset="UTF-8">
+    <header><h1>Water</h1></header>
+<title>Калькулятор</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<h2>Расчет стоимости воды</h2>
+<body bgcolor="white"; style="margin:0">
+<p>Введите цену за литр и количество литров <br> (Используйте цифры от 0 до 9)</p>
+<form onsubmit="return false" class="forma">
+    <p>Цена за литр</p>
+  <input type="text" name="cena" required pattern="^[ 0-9]+$" >
+  <p>Количество литров</p>
+  <input type="text" name="kolichestvo" required pattern="^[ 0-9]+$">
+  <button id="my-button" onclick="return click1()" >Стоимость</button>
+</form>
+<p id="result">Всего:</p>
+    <script src="js/form.js"></script>
+    <script src="js/button.js"></script>
+</body>
+</div>
+</center>
+</html>

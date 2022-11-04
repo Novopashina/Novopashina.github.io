@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Задание 2</title>
+        <link rel="stylesheet" href="style2.css" type="text/css">    
+        
+	</head>
+    <body>
+        <header>
+            <div class="shapka">
+                <img id="logo" src="https://www.kino-teatr.ru/movie/poster/96351/pv_72326.jpg" class="round" alt="логотип">
+                <h1 class="logodv">Сериал "Ходячие мертвецы"</h1>
+
+            </div>
+        </header>
+        <div class="main">
+            <nav>
+                <a href="#меню1">Гиперссылки</a>
+                <a href="#меню2">Таблица</a>
+                <a href="#меню3">Форма</a>
+            </nav>
+            <h2 id="меню1">Гиперссылки</h2>
+   
+	
+		
+    <ol>
+        <li><a href="http://example.com/">http</a></li>
+        <li><a href="https://example.com/">https</a></li>
+        <li><a href="ftp://example.com/file.txt"></a>без авторизации</li>
+        <li><a href="ftp://user:pasword@example.com/file.txt">c авторизацией</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/Ходячие_мертвецы_(телесериал)#Первый_сезон_(2010)">Сюжет сериала</a></li>
+        <li><a href="#about">Фрагмент</a></li>
+        <li><a href="http://example.com?arbuz&dinya">2 параметра</a></li>
+        <li><b>Дерево знаний</b>
+	        <ol>
+		        <li><a href="#about">О дереве</a></li>
+		        <li><a href="#services">Ветви</a></li>
+                <li><a href="#contacts">Связь с создателем</a></li>
+	        </ol>
+        </li>
+        <li><a>ссылка без href</a></li>
+        <li><a href=""> ссылка с пустым href</a></li>
+        <li><a href="http://example.com/" rel="nofollow">запрещен переход</a></li>
+        <!--noindex--><li><a href="https://example.com">без индексации</a></li><!--noindex-->
+        <li><p><i>Текст </i><a href="http://example.com/">Ссылка</a> Текст</p></li>
+        <li><a href="https://funart.pro/uploads/posts/2022-08/thumbs/1660063273_7-funart-pro-p-khodyachie-mertvetsi-fon-krasivo-9.jpg"><img src="https://funart.pro/uploads/posts/2022-08/thumbs/1660063273_7-funart-pro-p-khodyachie-mertvetsi-fon-krasivo-9.jpg?route=mid&h=750" alt="улица" style="width: 450px"></a></li>
+        <li>
+	        <img src="https://Novopashina.github.io/2022-09-13_14-06-01.png" alt="ходячий" usemap="#Walker">
+	        <map id="Walker" name="Walker">
+		        <area shape="rect" coords="0,30,230,183" href="https://funart.pro/uploads/posts/2022-08/thumbs/1660063268_15-funart-pro-p-khodyachie-mertvetsi-fon-krasivo-18.jpg" alt="Ушел">
+		        <area shape="circle" coords="350,105,105" href="https://funart.pro/uploads/posts/2022-08/thumbs/1660063326_46-funart-pro-p-khodyachie-mertvetsi-fon-krasivo-56.jpg" alt="Ушел">
+	        </map>
+        </li>	
+        <li><a href="about">текущий каталог</a></li>
+        <li><a href="about/1">страница в каталоге</a></li>
+        <li><a href="../1.html">выше на уровень</a></li>
+        <li><a href="../../2.html">на 2 уровня выше</a></li>
+        <li><a href="/">сокращенная</a></li>
+        <li><a href="/about">сокращенная на внутреннюю</a></li>
+    </ol>
+
+    <br>
+    <h2 id="меню2">Таблица</h2>
+    <table>
+        <tr>
+            <th>Колонка 1</th>
+            <th>Колонка 2</th>
+            <th>Колонка 3</th>
+        </tr>
+        <tr>
+            <td colspan="3">Ячейка 11 объединенная с 12 и 13</td>
+        </tr>
+        <tr>
+            <td>Ячейка 21</td>
+            <td>Ячейка 22</td>
+            <td>Ячейка 23</td>
+        </tr>
+        <tr>
+            <td>Ячейка 31</td>
+            <td>Ячейка 32</td>
+            <td>Ячейка 33</td>
+        </tr>
+        <tr>
+            <td>Ячейка 41</td>
+            <td>Ячейка 42</td>
+            <td>Ячейка 43</td>
+        </tr>
+        <tr>
+            <td>Ячейка 51</td>
+            <td>Ячейка 52</td>
+            <td>Ячейка 53</td>
+        </tr>
+    </table>
+
+
+
+
+    <h2 id="меню3">Форма</h2>
+    <form id="form" action="/" method="POST">
+        <label>
+	    Введите имя<br>
+	    <input name="field-name-1" value="Ваше ФИО">
+    </label><br>
+    <label>
+	    Введите e-mail адрес<br>
+	    <input name="field-email" value="Ваш e-mail" type="email">
+    </label><br>
+    <label>
+	
+	    Введите дату рождения<br>
+	    <input name="field-data" value="2022-09-01" type="date">
+    </label><br>
+	
+    Выберете ваш пол:<br>
+    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение 1">
+	    Мужской </label>
+    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение 2">
+	    Женский </label><br>
+	
+    Количество конечностей:<br>
+    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 1">
+	    0 </label>
+    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 2">
+	    1 </label>
+    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 3">
+	    2 </label>
+    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 4">
+	    3 </label>
+    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 4">
+	    4 </label>
+    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 4">
+	    >=5 </label><br>
+    <label>Сверхспособности:<br>
+    <select name="field-name-4[]" multiple="multiple">
+	    <option value="Значение 1">Бессмертие</option>
+	    <option value="Значение 2">Прохождение сквозь стены</option>
+	    <option value="Значение 3">Левитация</option>
+    </select>
+    </label><br>
+	
+    <label>Биография:<br>
+	    <textarea name="field-name-2">О себе</textarea>
+    </label><br>
+	
+
+
+Чекбокс:<br>
+<label><input type="checkbox" checked="checked" name="check-1">С контрактом ознакомлен(а)</label><br>
+<input type="submit" value="Отправить">	
+</form>
+        </div>
+        <footer>
+            <div class="end">
+				<h3>(c) Новопашина Анастасия 2022</h3>
+			</div>
+        </footer>
+</body>
+</html>

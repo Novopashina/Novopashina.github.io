@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Задание 3</title>
+    <link rel="stylesheet" href="style3.css" type="text/css">        
+</head>
+
+<body>
+    <div id="world">
+    <header>
+        <div class="shapka">
+            <img id="logo" src="https://www.kino-teatr.ru/movie/poster/96351/pv_72326.jpg" class="round" alt="логотип">
+            <h1>Сериал "Ходячие мертвецы"</h1>
+        </div>
+    </header>
+        
+    <nav id="navigation">
+        <ul>
+            <li><a href="#gip">Гиперссылки</a></li>
+            <li><a href="#tb">Таблица</a></li>
+            <li><a href="#footer">Форма</a></li>
+        </ul>
+    </nav>
+
+	<div class="main">
+        <h2 id="gip">Гиперссылки</h2>
+	<ol>	
+            <li><a href="http://example.com/">http</a></li>
+            <li><a href="https://example.com/">https</a></li>
+            <li><a href="ftp://example.com/file.txt"></a>без авторизации</li>
+            <li><a href="ftp://user:pasword@example.com/file.txt">c авторизацией</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Ходячие_мертвецы_(телесериал)#Первый_сезон_(2010)">Сюжет сериала</a></li>
+            <li><a href="#about">Фрагмент</a></li>
+            <li><a href="http://example.com?arbuz&dinya">2 параметра</a></li>
+            <li><b>Дерево знаний</b>
+	        <ol>
+		        <li><a href="#about">О дереве</a></li>
+		        <li><a href="#services">Ветви</a></li>
+                <li><a href="#contacts">Связь с создателем</a></li>
+	        </ol>
+            </li>
+            <li><a>ссылка без href</a></li>
+            <li><a href=""> ссылка с пустым href</a></li>
+            <li><a href="http://example.com/" rel="nofollow">запрещен переход</a></li>
+            <!--noindex--><li><a href="https://example.com">без индексации</a></li><!--noindex-->
+            <li><p><i>Текст </i><a href="http://example.com/">Ссылка</a> Текст</p></li>
+            <li><a href="https://funart.pro/uploads/posts/2022-08/thumbs/1660063273_7-funart-pro-p-khodyachie-mertvetsi-fon-krasivo-9.jpg"><img src="https://funart.pro/uploads/posts/2022-08/thumbs/1660063273_7-funart-pro-p-khodyachie-mertvetsi-fon-krasivo-9.jpg?route=mid&h=750" alt="улица" id="img1"></a></li>
+            <li>
+	        <img src="https://Novopashina.github.io/2022-09-13_14-06-01.png" id="img2" alt="ходячий" usemap="#Walker" >
+	        <map id="Walker" name="Walker">
+		        <area shape="rect" coords="0,30,230,183" href="https://funart.pro/uploads/posts/2022-08/thumbs/1660063268_15-funart-pro-p-khodyachie-mertvetsi-fon-krasivo-18.jpg" alt="Ушел">
+		        <area shape="circle" coords="350,105,105" href="https://funart.pro/uploads/posts/2022-08/thumbs/1660063326_46-funart-pro-p-khodyachie-mertvetsi-fon-krasivo-56.jpg" alt="Ушел">
+	        </map>
+            </li>	
+            <li><a href="about">текущий каталог</a></li>
+            <li><a href="about/1">страница в каталоге</a></li>
+            <li><a href="../1.html">выше на уровень</a></li>
+            <li><a href="../../2.html">на 2 уровня выше</a></li>
+            <li><a href="/">сокращенная</a></li>
+            <li><a href="/about">сокращенная на внутреннюю</a></li>
+        </ol>
+    </div>
+
+   
+    <div class="table">
+        <table id="tb">
+            <caption>
+                <h3>Таблица</h3>
+            </caption>
+            <tbody>
+                <tr>
+                    <th>Столбец 1</th>
+                    <th>Столбец 2</th>
+                    <th>Столбец 3</th>
+                </tr>
+		<tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+		<tr>
+                    <td colspan="3">21 22 23</td>
+                </tr>
+		<tr>
+                    <td>31</td>
+                    <td colspan="2">32 33</td>
+                </tr>
+		<tr>
+                    <td colspan="2">41 42</td>
+                    <td>43</td>
+                </tr>
+		<tr>
+                    <td>51</td>
+                    <td>52</td>
+                    <td>53</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="forma">
+        <h2>Форма</h2>
+                <form id="form" action="/" method="POST">
+                    <label>
+	                Введите имя<br>
+	                <input name="field-name-1" value="Ваше ФИО">
+                    </label><br>
+                    <label>
+	                Введите e-mail адрес<br>
+	                <input name="field-email" value="Ваш e-mail" type="email">
+                    </label><br>
+                    <label>
+	
+	                Введите дату рождения<br>
+	                <input name="field-data" value="2022-09-01" type="date">
+                    </label><br>
+	
+                    Выберете ваш пол:<br>
+                    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение 1">
+	                 Мужской </label>
+                    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение 2">
+	                Женский </label><br>
+	
+                    Количество конечностей:<br>
+                    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 1">
+	                0 </label>
+                    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 2">
+	                1 </label>
+                    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 3">
+	                2 </label>
+                    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 4">
+	                3 </label>
+                    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 4">
+	                4 </label>
+                    <label><input type="radio" checked="checked" name="radio-group-2" value="Значение 4">
+	                >=5 </label><br>
+                    <label>Сверхспособности:<br>
+                    <select name="field-name-4[]" multiple="multiple">
+	                <option value="Значение 1">Бессмертие</option>
+	                <option value="Значение 2">Прохождение сквозь стены</option>
+	                <option value="Значение 3">Левитация</option>
+                    </select>
+                    </label><br>
+	
+                    <label>Биография:<br>
+	                <textarea name="field-name-2">О себе</textarea>
+                    </label><br>
+	
+
+
+                    Чекбокс:<br>
+                    <label><input type="checkbox" id="checked" name="check-1">С контрактом ознакомлен(а)</label><br>
+                    <input type="submit" value="Отправить">	
+                </form>
+    </div>
+
+    <footer>
+        <div class="end" id="footer">
+		    <h2>c) Новопашина Анастасия 2022</h2><br>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

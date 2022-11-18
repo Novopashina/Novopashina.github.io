@@ -1,0 +1,44 @@
+html, body {
+  height: 100vh;
+background: linear-gradient(90deg, rgb(95, 158, 160) 0%, rgb(220, 20, 60) 100%);
+font-family: monospace;
+font-size: 20px;
+}
+
+#popup_bg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background: rgba(0,0,0,0.5);
+pointer-events: none;
+opacity: 0;
+}
+#forma{
+  display: none;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: GhostWhite;
+  border: 2px solid;
+  padding: 1vw;
+}
+#form1{
+  padding: 2vw;
+}
+#button{
+  width: 100px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#closebutton{
+float: right;
+}
+a:link {
+text-decoration: none;
+}
